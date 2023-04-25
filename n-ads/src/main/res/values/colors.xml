@@ -2,5 +2,5 @@
 <resources>
     <color name="image_background">#e5e5e5</color>
     <color name="installments_text">#000000</color>
-
+    <color name="product_title">#000000</color>
 </resources>

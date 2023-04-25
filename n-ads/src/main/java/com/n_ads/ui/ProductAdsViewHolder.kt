@@ -10,12 +10,13 @@ open class ProductAdsViewHolder<VB : ViewBinding>(val binding: VB): RecyclerView
 
     open fun onBindItem(item: ProductAds, onItemClick: (ProductAds) -> Unit) {
         val isAds = item.type == ProductAdsTypeEnum.ADS
-        if (isAds) {
+        if (isAds && !item.printed) {
+            item.printed = true
             Toast.makeText(itemView.context, "Anúncio impresso - ${item.title}", Toast.LENGTH_SHORT).show()
         }
 
         binding.root.setOnClickListener {
-            if (item.type == ProductAdsTypeEnum.ADS) {
+            if (isAds) {
                 Toast.makeText(it.context, "Clique no anúncio", Toast.LENGTH_SHORT).show()
             }
             onItemClick.invoke(item)

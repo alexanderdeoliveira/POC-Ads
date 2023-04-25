@@ -11,7 +11,7 @@ import com.n_ads.ui.ProductAdsViewHolder
 
 class ItemAdapter(
     private val context: Context,
-    private val initialList: List<ItemListModel>
+    initialList: List<ItemListModel>
 ): ProductAdsAdapter<ItemListProductBinding>() {
 
     init {
