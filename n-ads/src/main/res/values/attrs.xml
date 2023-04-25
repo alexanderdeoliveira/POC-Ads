@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProductAdsListView">
+        <attr name="type" format="enum">
+            <enum name="grid" value="0"/>
+            <enum name="list" value="1"/>
+        </attr>
+        <attr name="android:orientation" />
+    </declare-styleable>
+    <declare-styleable name="ProductAdsListSecond">
+        <attr name="adsType" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="end" value="2"/>
+            <enum name="equally_spaced" value="2"/>
+        </attr>
+        <attr name="android:orientation" />
+    </declare-styleable>
+</resources>
